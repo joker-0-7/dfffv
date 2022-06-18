@@ -1,0 +1,314 @@
+:root {
+  --main-background-color: #0e918c;
+  --anothr-background-color: #ebebeb;
+}
+* {
+  direction: rtl;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sec-one {
+  background-color: var(--main-background-color);
+  position: relative;
+  height: 60vh;
+}
+.sec-one img {
+  width: fit-content;
+  position: absolute;
+  bottom: -110px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sec-one .info {
+  font-size: 20px;
+}
+.sec-link a {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80px;
+  line-height: 50px;
+  font-size: 25px;
+  font-weight: 600;
+  position: relative;
+}
+.sec-link a::before {
+  content: "خصم 30 % لفترة محدوده";
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  color: white;
+  background-color: red;
+  bottom: 0;
+  left: 0;
+  font-size: 16px;
+  padding: 6px;
+  line-height: 8px;
+  z-index: 9;
+}
+.sec-two {
+  background-color: var(--main-background-color);
+}
+.sec-two .row {
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.sec-two .box {
+  background-color: white;
+  width: fit-content;
+  padding: 8px 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sec-two .box svg {
+  color: red;
+  font-size: 30px;
+  padding-left: 20px;
+  width: 50px;
+}
+.title h1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  position: relative;
+}
+.title h1::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: red;
+  top: 50%;
+  left: -10px;
+  transform: translate(-100%, -50%);
+}
+.title h1::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: red;
+  top: 50%;
+  right: -10px;
+  transform: translate(100%, -50%);
+}
+.sec-three .row {
+  justify-content: space-between;
+}
+.cart img {
+  outline: 2px solid white;
+}
+.sec-three .cart {
+  background-color: var(--main-background-color);
+  margin-bottom: 10px;
+  max-width: 20em;
+  font-weight: bold;
+  padding: 6px;
+  font-size: 20px;
+}
+.sec-five .box {
+  margin-left: auto;
+  padding: 20px 25px;
+  margin-right: auto;
+  background-color: var(--anothr-background-color);
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.sec-five .box img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-left: 50px;
+}
+.sec-five .box .comment{
+  background-color: #fff;
+  height: 80px;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+.number-one{
+  background-color: var(--main-background-color);
+}
+.number-one span{
+  color: red;
+}
+@media (max-width: 767px) {
+  .sec-one {
+    background-color: var(--main-background-color);
+    position: relative;
+    height: 80vh;
+  }
+
+  .sec-one img {
+    width: 600px;
+    position: absolute;
+    bottom: -110px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .sec-one .info {
+    font-size: 18px;
+  }
+
+  .sec-link a {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80px;
+    line-height: 50px;
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+  }
+
+  .sec-link a::before {
+    content: "خصم 30 % لفترة محدوده";
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    color: white;
+    background-color: red;
+    bottom: 0;
+    left: 0;
+    font-size: 16px;
+    padding: 6px;
+    line-height: 8px;
+    z-index: 9;
+  }
+
+  .sec-two {
+    background-color: var(--main-background-color);
+  }
+
+  .sec-two .row {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+  }
+
+  .sec-two .box {
+    background-color: white;
+    width: fit-content;
+    padding: 8px 10px;
+    border-radius: 8px;
+    display: flex;
+    font-size: 10px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sec-two .box svg {
+    color: red;
+    font-size: 20px;
+    padding-left: 00px;
+    width: 20px;
+  }
+
+  .title h1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    position: relative;
+  }
+
+  .title h1::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: red;
+    top: 50%;
+    left: -10px;
+    transform: translate(-100%, -50%);
+  }
+
+  .title h1::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: red;
+    top: 50%;
+    right: -10px;
+    transform: translate(100%, -50%);
+  }
+
+  .sec-three .row {
+    justify-content: space-between;
+  }
+
+  .cart img {
+    outline: 2px solid white;
+    border-radius: 0;
+  }
+
+  .sec-three .cart {
+    background-color: var(--main-background-color);
+    margin-bottom: 10px;
+    max-width: 10rem;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 6px;
+    border-radius: 0;
+  }
+  .sec-three .cart .card-body {
+    padding: 10px 0;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: red;
+    color: white;
+    width: 70% !important;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-wrapper {
+    height: 220px;
+  }
+
+  .swiper-slide p {
+    padding: 6px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+    .sec-five .box .comment {
+      height: auto;
+      font-size: 15px;
+      padding: 10px;
+    }
+    .sec-five .box img{
+      width: 80px;
+      height: 80px;
+      margin-left: 10px;
+    }
+      .sec-five .box{
+      padding: 10px 15px;
+      }
+}
